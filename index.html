@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Libraries / html2pdf -->
+  <script src="./libraries/html2pdf/html2pdf.bundle.min.js"></script>
+  <!-- Libraries / Prism-->
+  <link rel="stylesheet" href="./libraries/prism with cpp//prism.css">
+  <script src="./libraries/prism with cpp/prism.js"></script>
+  <title>Análisis y diseño de software</title>
+</head>
+<body>
+  <div style='height: 700px;display: flex;place-content: center;flex-direction:column;'>
+    <div style='text-align: center;'>
+      <img src="./img/univalle.jpg" alt="Universidad del Valle" width=50>
+    </div>
+    <h3 style='text-align: center;'>Universidad del Valle</h3>
+    <p style='text-align: center;font-size:.9em;'>Facultad de Ingeniería<br>Escuela de Ingeniería de Sistemas y Computación</p>
+    <div class="tooltip">
+      <h1 class="createPDF" id="createPDF">Análisis y diseño de software</h1>
+      <span class="tooltiptext">Click para descargar archivo PDF</span>
+    </div>
+    <h2 contenteditable="true" id='subtitle' style='text-align: center;'>...</h2>
+    <p style='text-align: center;'>Autores:</p>
+    <div style='display: flex;place-content: center;'>
+      <p contenteditable="true" style='text-align: center;'>Jhon Abril <span style='font-weight: bold;'>(jhon.abril@correunivalle.edu.co)</span>.</p>
+    </div>
+    <p style='text-align: center;'>Fecha:</p>
+    <div style='display: flex;place-content: center;'>
+      <input type="date">
+    </div>
+  </div>
+
+  <div class="html2pdf__page-break"></div>
+
+  <h2>Planteamiento</h2>
+  <h3>Área</h3>
+  <p contenteditable="true">...</p>
+  <h3>Descripción</h3>
+  <p contenteditable="true">...</p>
+
+  <div class="html2pdf__page-break"></div>
+  <h2>Proyecto</h2>
+  <h3>Nombre</h3>
+  <p contenteditable="true" id='subtitleTwo'>...</p>
+  <h3>Características</h3>
+  <p contenteditable="true"><input type="checkbox"> ...</p>
+
+  <div class="html2pdf__page-break"></div>
+
+  <h2>Ánalisis de datos</h2>
+  <h3>Nombre del proyecto</h3>
+  <p contenteditable="true" id='subtitleTwo'>...</p>
+  <h3>Ánalisis</h3>
+  <div style='background-color: #272822;border-radius: 5px;padding:10px 20px;color: white;'>
+    <p contenteditable="true" style='font-weight: bold;'>DATOS DE ENTRADA</p>
+    <p contenteditable="true">• ...</p>
+    <p contenteditable="true" style='font-weight: bold;'>DATOS DE SALIDA</p>
+    <p contenteditable="true">• ...</p>
+    <p contenteditable="true" style='font-weight: bold;'>PROCESO</p>
+    <p contenteditable="true">• ...</p>
+    <hr>
+    <p contenteditable="true" style='font-weight: bold;'>OBJETO(S) INVOLUCRADO(S)</p>
+    <p contenteditable="true">• ...</p>
+    <p contenteditable="true" style='font-weight: bold;'>ATRIBUTO(S) OBJETO(S)</p>
+    <p contenteditable="true" style='font-weight: bold;'>&nbsp;&nbsp;&nbsp;&nbsp;OBJETO 1<br>&nbsp;&nbsp;&nbsp;&nbsp;• ...</p>
+    <p contenteditable="true" style='font-weight: bold;'>MÉTODO(S) OBJETO(S)</p>
+    <p contenteditable="true" style='font-weight: bold;'>&nbsp;&nbsp;&nbsp;&nbsp;OBJETO 1<br>&nbsp;&nbsp;&nbsp;&nbsp;• ...</p>
+  </div>
+
+  <div class="html2pdf__page-break"></div>
+
+  <h2>Diseño de algoritmo</h2>
+  <h3>Nombre del proyecto</h3>
+  <p contenteditable="true" id='subtitleTwo'>...</p>
+  <h3>Algoritmo</h3>
+  <div style='background-color: #272822;border-radius: 5px;padding:10px 20px;color: white;'>
+    <p contenteditable="true" style='font-weight: bold;'>INICIO</p>
+    <p contenteditable="true">&nbsp;&nbsp;&nbsp;&nbsp;• ...</p>
+    <p contenteditable="true" style='font-weight: bold;'>FIN</p>
+  </div>
+
+  <div class="html2pdf__page-break"></div>
+  <h2>Diagrama de clases</h2>
+  <h3>Nombre del proyecto</h3>
+  <p contenteditable="true" id='subtitleTwo'>...</p>
+  <h3 id='diagramImg'>Diagrama</h3>
+  <div>
+    <img id='diagram' alt="Diagrama de clase." width='100%'>
+  </div>
+
+
+  <script src="./scripts/app.js"></script>
+</body>
+</html>
